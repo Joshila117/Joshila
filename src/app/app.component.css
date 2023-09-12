@@ -3,7 +3,7 @@
   height: 100vh;
  }
  .circle{
-  /* display: flex; */
+  display: flex;
   margin-top: 150px;
   margin-right: 50px;
   float:right;
@@ -20,7 +20,6 @@
   width: 100%;
   height: 100%;
   border:5px solid #ee56d2;
-  position: relative;
   object-fit: cover;
   border-radius: 110%;
  }
@@ -37,9 +36,6 @@
   align-items: center;
   margin-top: 300px;
   margin-left: 150px;
-}
-.text{
-  margin-left: 40px;
 }
  pre {
   color: #ee56d2;
