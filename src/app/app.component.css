@@ -1,0 +1,112 @@
+.container{
+  background-color: rgba(5, 0, 2, 0.98);
+  height: 100vh;
+ }
+ .circle{
+  /* display: flex; */
+  margin-top: 150px;
+  margin-right: 50px;
+  float:right;
+  justify-content: center; /* Horizontally align to the right */
+  align-items: center; /* Vertically center */
+  height: 500px; /* Set a height to occupy the full viewport height */
+  width: 500px;
+  padding-right: 20px; 
+  border-radius: 100%;
+  
+ }
+ .circle img{
+  filter: grayscale(10%);
+  width: 100%;
+  height: 100%;
+  border:5px solid #ee56d2;
+  position: relative;
+  object-fit: cover;
+  border-radius: 110%;
+ }
+ img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+  animation: rotate 1.5s linear infinite;
+    background: #ee56d2; /* Neon pink background color */
+    box-shadow: 0 0 10px #ee56d2, 0 0 20px #ff00e0, 0 0 30px #ff00e0; /* Neon pink glow */
+}
+.matter{
+  float: left;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-left: 150px;
+}
+.text{
+  margin-left: 40px;
+}
+ pre {
+  color: #ee56d2;
+  /* float: left; */
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(250, 253, 250, 0.5);
+  font-size: xx-large;
+ }
+.box{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.outer{
+  position: relative;
+  margin-left: 180px;
+  background: #ee56d2;
+}
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+.options{
+  margin-top: 90px;
+  /* margin-left: 400px; */
+  /* position: relative; */
+}
+.outer button, .outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button{
+  background: #111;
+  color: #ee56d2;
+  outline: none;
+  border: none;
+  z-index: 9;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span{
+  border-radius: 50px;
+}
+.outer:hover span:nth-child(1){
+  filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+  filter: blur(14px);
+}
+.outer:hover{
+  background: #ff00e0;
+  animation: rotate 1.5s linear infinite;
+}
+    
+    
+    
